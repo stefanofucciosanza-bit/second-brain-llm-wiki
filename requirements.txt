@@ -1,0 +1,18 @@
+# Second Brain — LLM Wiki tools
+# Install with:  pip install -r requirements.txt
+
+# --- pdf_ingest.py (PDF -> text + page images) ---
+pypdf
+pypdfium2
+pillow
+
+# --- claude_bridge.py (OpenAI-compatible server -> Claude Code) ---
+fastapi
+uvicorn
+
+# --- jarvis.py (local voice layer: STT -> Claude -> TTS) ---
+faster-whisper
+sounddevice
+soundfile
+numpy
+piper-tts

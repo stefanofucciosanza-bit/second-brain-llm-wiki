@@ -1,0 +1,44 @@
+# === PRIVACY GUARD ===
+# This repo publishes the SYSTEM only. Never commit personal/confidential content.
+# Even though content is meant to live elsewhere, these rules are a safety net.
+
+# Any real notes / sources dropped into the structure folders (keep only .gitkeep)
+raw/**
+!raw/assets/.gitkeep
+!raw/.gitkeep
+00_Inbox/**
+!00_Inbox/.gitkeep
+10_Progetti/**
+!10_Progetti/.gitkeep
+20_Aree/**
+!20_Aree/.gitkeep
+30_Risorse/**
+!30_Risorse/Concetti/.gitkeep
+40_Archivio/**
+!40_Archivio/.gitkeep
+50_Diario/**
+!50_Diario/Daily/.gitkeep
+!50_Diario/Weekly_Review/.gitkeep
+
+# Obsidian workspace + local config
+.obsidian/
+
+# Agent memory / logs / index (personal)
+MEMORY.md
+memory/
+index.md
+log.md
+
+# Voice models (large, downloadable)
+tools/piper_voices/
+*.onnx
+*.onnx.json
+*.mp3
+*.wav
+
+# Python / OS junk
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.venv/
