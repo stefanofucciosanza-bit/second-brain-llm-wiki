@@ -42,3 +42,40 @@ __pycache__/
 .DS_Store
 Thumbs.db
 .venv/
+
+# === HARD BLOCK: client / employer material (added 2026-08-06) ===
+# Belt-and-braces: block by FILENAME anywhere in the tree, not just by folder.
+# The folder rules above miss repo root and 99_Meta — these do not.
+*PwC*
+*pwc*
+*Spec-Driven*
+*spec-driven*
+*SpecDriven*
+*CCB*
+*Allitude*
+*Anagrafe*
+*BIAN*
+*AFU*
+*riservato*
+*confidential*
+**/deliverables/**
+
+# 99_Meta: publish templates only, never working meta content
+99_Meta/**
+!99_Meta/Templates/
+!99_Meta/Templates/.gitkeep
+
+# No stray notes at repo root (only the system files below are allowed)
+/*.md
+!/README.md
+!/CLAUDE.md
+
+# === JARVIS: cio' che resta nel vault e non esce mai ===
+*sessioni*.md
+*_log.md
+jarvis_sessioni.md
+tools/musica/
+tools/filler/
+tools/piper_voices/
+*.onnx
+*.onnx.json
